@@ -1,11 +1,3 @@
-function twiceChecker(number: Number): boolean {
-  const stringified = String(number)
-  const len = stringified.length
-
-  if (len % 2 !== 0) return false
-  return stringified.slice(0, len / 2) === stringified.slice(len / 2, len)
-}
-
 function isSilly(number: Number): boolean {
   const stringified = String(number)
   const len = stringified.length

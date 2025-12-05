@@ -14,9 +14,7 @@ function solution(input: string): number {
   for (const { normalizedDistance } of rotations) {
     position = position + normalizedDistance
 
-    console.log("--------------------------")
     if (position < 0 || position > 100) {
-      console.log({ floor: Math.abs(Math.floor(position / 100)), partial: position })
       zeroAppearances += Math.abs(Math.floor(position / 100))
       if (position - normalizedDistance === 0) {
         zeroAppearances -= 1
@@ -25,11 +23,8 @@ function solution(input: string): number {
 
     position %= 100
     if (position < 0) position += 100
-    console.log({ position })
 
     if (position === 0) zeroAppearances += 1
-    console.log({ zeroAppearances })
-    console.log("--------------------------")
   }
 
   return zeroAppearances

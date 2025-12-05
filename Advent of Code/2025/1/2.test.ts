@@ -13,7 +13,7 @@ L99
 R14
 L82`
 
-describe("Year 2025, Day 1, Part 1", () => {
+describe("Year 2025, Day 1, Part 2", () => {
   test("Example", () => {
     expect(solution(EXAMPLE_INPUT)).toEqual(6)
   })

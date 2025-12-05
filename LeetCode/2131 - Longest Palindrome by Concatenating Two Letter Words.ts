@@ -22,7 +22,6 @@ function longestPalindrome(words: string[]): number {
     }
   }
 
-  console.log({ freq, ans })
   for (let [key, val] of freq) {
     if (key === reverseString(key) && val > 0) {
       ans += 2
